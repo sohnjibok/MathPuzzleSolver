@@ -616,7 +616,13 @@ const getOutput = async (a1, a2, a3, b1, b2, b3) => {
 	const matricesB = createAllPossibleMatrices(bOne, bTwo, bThree)
 
 	const commonMatrices = findCommonMatrices(matricesA, matricesB)
+	if (!commonMatrices) {
+		h3.textContent = 'No common matrices found'
+		return
+	}
 	const commonMatricesArray = commonMatrices[0].split('')
+
+	
 
 	console.log(commonMatrices)
 	console.log(commonMatricesArray)
