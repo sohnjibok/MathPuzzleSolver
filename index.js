@@ -619,7 +619,7 @@ const getOutput = async (a1, a2, a3, b1, b2, b3) => {
 	console.log('commonMatrices', commonMatrices)
 	if (commonMatrices.length === 0) {
 		console.log('No common matrices found')
-		h3.textContent = 'No common matrices found. Recheck the inputs.'
+		h3.textContent = 'No solution found. Recheck input values.'
 		return
 	}
 	const commonMatricesArray = commonMatrices[0].split('')
